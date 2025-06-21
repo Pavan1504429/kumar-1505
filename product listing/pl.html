@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="pl.css">
+</head>
+<body>
+    <header>
+        <h1>Our Products</h1>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="filter-section">
+                <h3>Filter by Category</h3>
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="books">Books</option>
+                </select>
+            </div>
+            <div class="filter-section">
+                <h3>Filter by Price</h3>
+                <input type="number" id="minPrice" placeholder="Min Price" min="0">
+                <input type="number" id="maxPrice" placeholder="Max Price" min="0" value="1000">
+                <button id="applyPriceFilter">Apply Price Filter</button>
+            </div>
+            <div class="filter-section">
+                <h3>Sort by Rating</h3>
+                <select id="ratingSort">
+                    <option value="noSort">No Sort</option>
+                    <option value="highToLow">High to Low</option>
+                    <option value="lowToHigh">Low to High</option>
+                </select>
+            </div>
+        </aside>
+        <main class="product-grid" id="productGrid">
+            
+        </main>
+    </div>
+    <script src="pl.js"></script>
+</body>
+</html>
